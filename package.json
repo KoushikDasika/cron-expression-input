@@ -9,22 +9,18 @@
   ],
   "exports": {
     ".": {
-      "import": "./lib/*.js",
-      "require": "./lib/*.js"
+      "import": "./lib/cron-expression-input.min.js",
+      "require": "./lib/cron-expression-input.min.js"
     },
-    "./lib/*": {
-      "import": "./lib/*.js",
-      "require": "./lib/*.js"
+    "./lib/cron-expression-input.min.js": {
+      "import": "./lib/cron-expression-input.min.js",
+      "require": "./lib/cron-expression-input.min.js"
     },
-    "./lib/*.js": {
-      "import": "./lib/*.js",
-      "require": "./lib/*.js"
+    "./lib/cron-expression-input.min.css": {
+      "import": "./lib/cron-expression-input.min.css",
+      "require": "./lib/cron-expression-input.min.css"
     },
-    "./lib/*.css": {
-      "import": "./lib/*.css",
-      "require": "./lib/*.css"
-    },
-    "./cultures/": "./lib/cultures/"
+    "./cultures/*": "./lib/cultures/*"
   },
   "repository": {
     "type": "git",
