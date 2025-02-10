@@ -13,18 +13,21 @@
     ".": {
       "import": "./dist/cron-expression-input.js",
       "require": "./dist/cron-expression-input.umd.js",
-      "types": "./lib/types/cron-expression-input.d.ts"
+      "types": "./dist/types/cron-expression-input.d.ts"
     },
-    "./lib/cron-expression-input.min.js": {
+    "./cron-expression-input.min.js": {
       "import": "./dist/cron-expression-input.min.js",
       "require": "./dist/cron-expression-input.min.js"
     },
-    "./lib/cron-expression-input.min.css": {
+    "./cron-expression-input.min.css": {
       "import": "./dist/cron-expression-input.min.css",
       "require": "./dist/cron-expression-input.min.css"
     },
-    "./cultures/*": "./lib/cultures/*",
-    "./src/*": "./src/*",
+    "./cron-expression-input.d.ts": {
+      "import": "./dist/types/cron-expression-input.d.ts",
+      "require": "./dist/types/cron-expression-input.d.ts"
+    },
+    "./cultures/*": "./dist/cultures/*",
     "./style.css": "./dist/style.css"
   },
   "repository": {
@@ -34,7 +37,7 @@
   "author": "Jossy Devers <jossydevers@gmail.com> (https://github.com/JossyDevers)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JossyDevers/cron-expression-input/issues"
+    "url": "https://github.com/KoushikDasika/cron-expression-input/issues"
   },
   "homepage": "https://github.com/JossyDevers/cron-expression-input#readme",
   "keywords": [
