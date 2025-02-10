@@ -2,29 +2,34 @@
   "name": "cron-expression-input",
   "version": "1.3.1",
   "description": "Cron UI: input component to generate cron expressions easily and intuitively",
-  "main": "lib/cron-expression-input.min.js",
+  "main": "dist/cron-expression-input.min.js",
   "files": [
+    "dist/*",
     "lib/*",
-    "lib/cultures/*"
+    "lib/cultures/*",
+    "src/*"
   ],
   "exports": {
     ".": {
-      "import": "./lib/cron-expression-input.min.js",
-      "require": "./lib/cron-expression-input.min.js"
+      "import": "./dist/cron-expression-input.js",
+      "require": "./dist/cron-expression-input.umd.js",
+      "types": "./lib/types/cron-expression-input.d.ts"
     },
     "./lib/cron-expression-input.min.js": {
-      "import": "./lib/cron-expression-input.min.js",
-      "require": "./lib/cron-expression-input.min.js"
+      "import": "./dist/cron-expression-input.min.js",
+      "require": "./dist/cron-expression-input.min.js"
     },
     "./lib/cron-expression-input.min.css": {
-      "import": "./lib/cron-expression-input.min.css",
-      "require": "./lib/cron-expression-input.min.css"
+      "import": "./dist/cron-expression-input.min.css",
+      "require": "./dist/cron-expression-input.min.css"
     },
-    "./cultures/*": "./lib/cultures/*"
+    "./cultures/*": "./lib/cultures/*",
+    "./src/*": "./src/*",
+    "./style.css": "./dist/style.css"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JossyDevers/cron-expression-input.git"
+    "url": "git+https://github.com/KoushikDasika/cron-expression-input.git"
   },
   "author": "Jossy Devers <jossydevers@gmail.com> (https://github.com/JossyDevers)",
   "license": "MIT",
@@ -44,8 +49,9 @@
     "unix"
   ],
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack --config webpack.config.js"
+    "start": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "cron-validator": "^1.2.1",
@@ -56,9 +62,9 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "babel-loader": "^8.2.2",
-    "html-webpack-plugin": "^4.5.2",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
-  }
+    "vite": "^4.5.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^18.0.0"
+  },
+  "types": "./lib/types/cron-expression-input.d.ts"
 }

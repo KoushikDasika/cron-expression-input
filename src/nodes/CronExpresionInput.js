@@ -6,8 +6,8 @@ else ceInputLangInternal = ceInputLang;
 import { CronComponent } from "./CronComponent";
 import { CronExpresionInputTemplateGenerator } from "../templates/CronExpresionInputTemplate";
 
-const cron = require("cron-validator");
-const cronstrue = require('cronstrue');
+import { isValidCron } from "cron-validator";
+import cronstrue from 'cronstrue';
 
 export class CronExpresionInput extends CronComponent {
     constructor() {
@@ -102,7 +102,7 @@ export class CronExpresionInput extends CronComponent {
         var error = self.getElement(".cronexpressionError");
         if (
             (insideInput.value.length == 0 && self.required) ||
-            (insideInput.value.length != 0 && !cron.isValidCron(insideInput.value))
+            (insideInput.value.length != 0 && !isValidCron(insideInput.value))
         ) {
             error.classList.replace("hiden", "show");
             return false;
@@ -144,7 +144,7 @@ export class CronExpresionInput extends CronComponent {
         }
         return range;
     }
-    getTypeChoise(expresion) {
+    getTypeChoice(expresion) {
         return expresion.split(",");
     }
     getCron(cronExpresion) {
@@ -157,9 +157,9 @@ export class CronExpresionInput extends CronComponent {
         this.setCronInTab(forms[4], crons[4], this.getTypeCron(crons[4]));
     }
     setCronInTab(form, value, type, decrement = 0) {
-        var choises = form.querySelectorAll("input[name='choise']");
-        choises.forEach((choise) => choise.removeAttribute("checked"));
-        choises[type - 1].checked = true;
+        var Choices = form.querySelectorAll("input[name='Choice']");
+        Choices.forEach((Choice) => Choice.removeAttribute("checked"));
+        Choices[type - 1].checked = true;
         switch (type) {
             case 1:
                 var step = this.getTypeStep(value);
@@ -177,7 +177,7 @@ export class CronExpresionInput extends CronComponent {
                     parseInt(range["max"]) - decrement;
                 break;
             case 3:
-                var cs = this.getTypeChoise(value);
+                var cs = this.getTypeChoice(value);
                 form
                     .querySelectorAll("*[match=spesific] input")
                     .forEach((element, index) => {
