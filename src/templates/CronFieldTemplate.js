@@ -10,8 +10,8 @@ export function CronFieldTemplateGenerator (obj, objLang) {
                 <div style='display: flex; height: 138px;'>
                     <div class='panel panel-default' style='margin-right: 2.5px; width: 50%; height: 132px;'>
                         <div class='panel-heading'>
-                            <div style='display: flex;'> <input class='propagationClass form-check-input' type='radio' name='choise' value='1'
-                                    match='choise' checked> <span style='margin-left: 10px;'>${objLang.stepChoise}</span> </div>
+                            <div style='display: flex;'> <input class='propagationClass form-check-input' type='radio' name='Choice' value='1'
+                                    match='Choice' checked> <span style='margin-left: 10px;'>${objLang.stepChoice}</span> </div>
                         </div>
                         <div class='panel-body' style='display: flex !important;'>
                             <div class='propagationClass form-group' style='margin-right: 5px; width: 50%;'> <label
@@ -27,8 +27,8 @@ export function CronFieldTemplateGenerator (obj, objLang) {
                     </div>
                     <div class='panel panel-default' style='margin-left: 2.5px; width: 50%; height: 132px;'>
                         <div class='panel-heading'>
-                            <div style='display: flex;'> <input class='propagationClass form-check-input' type='radio' name='choise' value='2'
-                                    match='choise'> <span style='margin-left: 10px;'>${objLang.rangeChoise}</span> </div>
+                            <div style='display: flex;'> <input class='propagationClass form-check-input' type='radio' name='Choice' value='2'
+                                    match='Choice'> <span style='margin-left: 10px;'>${objLang.rangeChoice}</span> </div>
                         </div>
                         <div class='panel-body'>
                             <div class='form-group'>
@@ -48,8 +48,8 @@ export function CronFieldTemplateGenerator (obj, objLang) {
                 </div>
                 <div class='panel panel-default' style='margin: 0px !important; padding: 0px !important; height: 214px;'>
                     <div class='panel-heading'>
-                        <div style='display: flex;'> <input class='propagationClass form-check-input' type='radio' name='choise' value='3'
-                                match='choise'> <span style='margin-left: 10px;'>${objLang.choise}</span> </div>
+                        <div style='display: flex;'> <input class='propagationClass form-check-input' type='radio' name='Choice' value='3'
+                                match='Choice'> <span style='margin-left: 10px;'>${objLang.Choice}</span> </div>
                     </div>
                     <div class='panel-body' style="padding-top: 6px !important;">
                         <div match='spesific' class='form-group'
