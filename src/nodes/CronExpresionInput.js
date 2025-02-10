@@ -6,8 +6,8 @@ else ceInputLangInternal = ceInputLang;
 import { CronComponent } from "./CronComponent";
 import { CronExpresionInputTemplateGenerator } from "../templates/CronExpresionInputTemplate";
 
-const cron = require("cron-validator");
-const cronstrue = require('cronstrue');
+import { isValidCron } from "cron-validator";
+import cronstrue from 'cronstrue';
 
 export class CronExpresionInput extends CronComponent {
     constructor() {
@@ -102,7 +102,7 @@ export class CronExpresionInput extends CronComponent {
         var error = self.getElement(".cronexpressionError");
         if (
             (insideInput.value.length == 0 && self.required) ||
-            (insideInput.value.length != 0 && !cron.isValidCron(insideInput.value))
+            (insideInput.value.length != 0 && !isValidCron(insideInput.value))
         ) {
             error.classList.replace("hiden", "show");
             return false;
