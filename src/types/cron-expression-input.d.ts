@@ -1,4 +1,4 @@
-declare class CronExpressionInput extends HTMLElement {
+declare class CronExpressionInputType extends HTMLElement {
   constructor();
   
   // Properties
@@ -21,8 +21,6 @@ declare class CronExpressionInput extends HTMLElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'cron-expression-input': CronExpressionInput;
+    'cron-expression-input': CronExpressionInputType;
   }
 }
-
-export default CronExpressionInput; 
