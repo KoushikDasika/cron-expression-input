@@ -23,13 +23,10 @@
       "import": "./dist/cron-expression-input.min.css",
       "require": "./dist/cron-expression-input.min.css"
     },
-    "./cron-expression-input.d.ts": {
-      "import": "./dist/types/cron-expression-input.d.ts",
-      "require": "./dist/types/cron-expression-input.d.ts"
-    },
     "./cultures/*": "./dist/cultures/*",
     "./style.css": "./dist/style.css"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/KoushikDasika/cron-expression-input.git"
@@ -64,10 +61,11 @@
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
+    "@types/node": "^18.0.0",
     "babel-loader": "^8.2.2",
-    "vite": "^4.5.0",
+    "esbuild": "^0.25.0",
     "typescript": "^5.0.0",
-    "@types/node": "^18.0.0"
+    "vite": "^4.5.0"
   },
   "types": "./lib/types/cron-expression-input.d.ts"
 }
