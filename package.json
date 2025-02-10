@@ -11,19 +11,10 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/cron-expression-input.js",
-      "require": "./dist/cron-expression-input.umd.js",
-      "types": "./dist/types/cron-expression-input.d.ts"
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./src/types/cron-expression-input.d.ts"
     },
-    "./cron-expression-input.min.js": {
-      "import": "./dist/cron-expression-input.min.js",
-      "require": "./dist/cron-expression-input.min.js"
-    },
-    "./cron-expression-input.min.css": {
-      "import": "./dist/cron-expression-input.min.css",
-      "require": "./dist/cron-expression-input.min.css"
-    },
-    "./cultures/*": "./dist/cultures/*",
     "./style.css": "./dist/style.css"
   },
   "type": "module",
